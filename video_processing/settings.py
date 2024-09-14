@@ -84,7 +84,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'DB_DJProject',
         'USER': 'postgres',
-        # 'PASSWORD': 'csmpl@123',
         'PASSWORD': 'Video@123',
         # 'HOST': 'localhost',  # or the IP address of your PostgreSQL server
         'HOST': 'db',  # or the IP address of your PostgreSQL server
