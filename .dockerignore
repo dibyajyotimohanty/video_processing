@@ -1,0 +1,28 @@
+# Ignore Python virtual environments
+env/
+venv/
+
+
+# Ignore local project files
+.git/
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+/video_processing/__pycache__/
+/videos/__pycache__/
+
+# Ignore media and static files
+/media/videos/
+staticfiles/
+static/
+
+# Ignore environment variables
+.env
+
+# Ignore cache and logs
+*.log
+*.cache
+*.coverage
+.pytest_cache/
+htmlcov/

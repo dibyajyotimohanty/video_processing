@@ -1,0 +1,10 @@
+<h2>Uploaded Videos</h2>
+<ul>
+    {% for video in videos %}
+    <li>
+        <a href="{% url 'view_video' video.id %}">{{ video.title }}</a>
+    </li>
+    {% empty %}
+    <li>No videos uploaded yet.</li>
+    {% endfor %}
+</ul>

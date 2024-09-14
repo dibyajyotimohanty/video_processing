@@ -1,0 +1,7 @@
+<h2>{{ video.title }}</h2>
+<video width="600" controls>
+    <source src="{{ video.video_file.url }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h3>Subtitles:</h3>
+<pre>{{ video.subtitle_content }}</pre>

@@ -1,0 +1,17 @@
+<h2>Search for subtitles</h2>
+<form method="get">
+    <input type="text" name="q" placeholder="Search for a phrase" value="{{ query }}">
+    <button type="submit">Search</button>
+</form>
+
+<h3>Results</h3>
+<ul>
+    {% for video in results %}
+    <li>
+        <a href="{% url 'view_video' video.id %}">{{ video.title }}</a>
+        <p>{{ video.subtitle_content|truncatewords:50 }}</p>
+    </li>
+    {% empty %}
+    <li>No results found.</li>
+    {% endfor %}
+</ul>

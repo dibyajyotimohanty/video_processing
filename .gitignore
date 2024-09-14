@@ -1,0 +1,50 @@
+# Python specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+/video_processing/__pycache__/
+/videos/__pycache__/
+
+# Virtual environment
+env/
+venv/
+
+# Django specific ignores
+*.sqlite3
+db.sqlite3
+/media/videos/
+staticfiles/
+static/
+*.pot
+*.pyc
+
+# VSCode specific
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Docker specific
+*.pid
+docker-compose.override.yml
+
+# Pytest specific
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# Migrations
+*/migrations/*
+
+# Compiled files
+*.mo
+*.po
